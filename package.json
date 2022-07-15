@@ -1,6 +1,6 @@
 {
   "name": "@nickgraffis/us-states",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "accesss": "public",
   "description": "🗺 Useful operations for working with US states and their abbreviations.",
   "main": "dist/us-states.js",
