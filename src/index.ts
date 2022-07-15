@@ -99,6 +99,6 @@ export const state = (query: StateAbv | State | StateNumberCodes) => {
   return {
     name: found?.name,
     abv: found && 'abv' in found ? found?.abv : null,
-    numberCode: found?.code,
+    code: found?.code,
   }
 }

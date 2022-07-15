@@ -1,6 +1,6 @@
 {
   "name": "@nickgraffis/us-states",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "accesss": "public",
   "description": "🗺 Useful operations for working with US states and their abbreviations.",
   "main": "dist/us-states.js",
@@ -48,6 +48,7 @@
   "devDependencies": {
     "@rollup/plugin-typescript": "^8.3.3",
     "@vitest/ui": "^0.17.1",
+    "@yarnpkg/pnpify": "^4.0.0-rc.11",
     "esbuild": "^0.14.48",
     "rollup": "^2.6.1",
     "rollup-plugin-commonjs": "^9.1.4",
@@ -64,7 +65,6 @@
     "vite": "^2.9.14",
     "vitepress": "^1.0.0-alpha.4",
     "vitest": "^0.17.1",
-    "vue": "^3.2.37",
-    "@yarnpkg/pnpify": "^4.0.0-rc.11"
+    "vue": "^3.2.37"
   }
 }
