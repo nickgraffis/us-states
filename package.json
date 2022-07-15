@@ -1,0 +1,70 @@
+{
+  "name": "@nickgraffis/us-states",
+  "version": "0.0.1",
+  "accesss": "public",
+  "description": "🗺 Useful operations for working with US states and their abbreviations.",
+  "main": "dist/us-states.js",
+  "module": "dist/us-states.mjs",
+  "typings": "dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "node": {
+        "require": "./dist/us-states.cjs",
+        "import": "./dist/us-states.mjs"
+      },
+      "default": "./dist/us-states.js"
+    },
+    "./dist/*": "./dist/*"
+  },
+  "files": [
+    "dist/**/*.js",
+    "dist/**/*.mjs",
+    "dist/**/*.cjs",
+    "dist/*.d.ts"
+  ],
+  "scripts": {
+    "tsc": "tsc",
+    "build": "NODE_ENV=production vite build",
+    "dev": "rollup -c -w",
+    "pretest": "npm run build",
+    "moonphase": "ts-node plugin-examples/moonphase.ts",
+    "docs:dev": "vitepress dev docs",
+    "docs:build": "vitepress build docs",
+    "docs:serve": "vitepress serve docs",
+    "test": "vitest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nickgraffis/headless-calendar-fns.git"
+  },
+  "keywords": [],
+  "author": "Nick Graffis <hi@nickgraffis.me>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nickgraffis/headless-calendar-fns/issues"
+  },
+  "homepage": "https://github.com/nickgraffis/headless-calendar-fns#readme",
+  "devDependencies": {
+    "@rollup/plugin-typescript": "^8.3.3",
+    "@vitest/ui": "^0.17.1",
+    "esbuild": "^0.14.48",
+    "rollup": "^2.6.1",
+    "rollup-plugin-commonjs": "^9.1.4",
+    "rollup-plugin-dts": "^4.2.2",
+    "rollup-plugin-esbuild": "^4.9.1",
+    "rollup-plugin-json": "^3.0.0",
+    "rollup-plugin-license": "^2.0.0",
+    "rollup-plugin-node-resolve": "^3.3.0",
+    "rollup-plugin-terser": "^5.3.0",
+    "rollup-plugin-typescript": "^0.8.1",
+    "rollup-plugin-typescript2": "^0.32.1",
+    "ts-node": "^10.8.2",
+    "typescript": "^4.7.4",
+    "vite": "^2.9.14",
+    "vitepress": "^1.0.0-alpha.4",
+    "vitest": "^0.17.1",
+    "vue": "^3.2.37",
+    "@yarnpkg/pnpify": "^4.0.0-rc.11"
+  }
+}
